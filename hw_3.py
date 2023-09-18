@@ -7,8 +7,8 @@
 from random import randint
 
 LOWER_LIMIT = 0  # Нижняя граница случайного числа
-UPPER_LIMIT = 10  # Верхняя граница случайного числа
-MAX_TRIES = 5  # Максимальное количество попыток
+UPPER_LIMIT = 1000  # Верхняя граница случайного числа
+MAX_TRIES = 10  # Максимальное количество попыток
 
 num = randint(LOWER_LIMIT, UPPER_LIMIT)
 tries = 0
