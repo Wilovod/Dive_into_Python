@@ -4,8 +4,8 @@
 
 number = int(input("Введите число: "))
 
-if number < 0 or number > 1000:
-    print("Число должно быть положительным и не превышать 1000")
+if number < 0 or number > 100000:
+    print("Число должно быть положительным и не превышать 100000")
 else:
     is_prime = True
     if number < 2:
