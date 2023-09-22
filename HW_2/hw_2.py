@@ -9,7 +9,7 @@ def simplify_fraction(numerator, denominator):
             a, b = b, a % b
         return a
 
-    # Упрощаем дробь, деля числитель и знаменатель на их НОД
+    # Упрощаем дробь
     gcd_value = gcd(numerator, denominator)
     numerator //= gcd_value
     denominator //= gcd_value
