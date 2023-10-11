@@ -2,11 +2,13 @@ import os
 import random
 import string
 
+
 def generate_random_letters(length):
     letters = string.ascii_lowercase
     return ''.join(random.choices(letters, k=length))
 
-def group_rename_files(num_digits, source_extension, target_extension, name_range, directory='.', counter = 1):
+
+def group_rename_files(num_digits, source_extension, target_extension, name_range, directory='.', counter=1):
     files = os.listdir(directory)
 
     for file in files:
@@ -37,5 +39,3 @@ def group_rename_files(num_digits, source_extension, target_extension, name_rang
 
 # Пример использования
 group_rename_files(5, '.txt', '.doc', [1, 3])
-
-
